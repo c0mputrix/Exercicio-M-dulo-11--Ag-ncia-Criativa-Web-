@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agência Criativa Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <h1 class="logo">Criativa<span>Web</span></h1>
+
+    <nav id="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container">
+    <h2>Transformamos ideias em experiências digitais</h2>
+    <p>Design moderno, desenvolvimento rápido e resultados reais.</p>
+    <a href="#contato" class="btn">Fale Conosco</a>
+  </div>
+</section>
+
+<section id="sobre" class="section">
+  <div class="container">
+    <h2>Sobre Nós</h2>
+    <p>Somos uma agência especializada em design digital, focada em criar experiências modernas, intuitivas e eficientes para nossos clientes.</p>
+  </div>
+</section>
+
+<section id="servicos" class="section">
+  <div class="container">
+    <h2>Serviços</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Design Gráfico</h3>
+        <p>Identidade visual moderna e profissional.</p>
+      </div>
+
+      <div class="card">
+        <h3>Desenvolvimento Web</h3>
+        <p>Sites rápidos, responsivos e otimizados.</p>
+      </div>
+
+      <div class="card">
+        <h3>Branding</h3>
+        <p>Construa uma marca forte e memorável.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="depoimentos" class="section dark">
+  <div class="container">
+    <h2>Depoimentos</h2>
+
+    <div class="flex">
+      <div class="depoimento">
+        <p>"Excelente trabalho! Nosso site ficou incrível."</p>
+        <span>- Cliente 1</span>
+      </div>
+
+      <div class="depoimento">
+        <p>"Profissionais de alto nível e entrega rápida."</p>
+        <span>- Cliente 2</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contato" class="section">
+  <div class="container">
+    <h2>Contato</h2>
+
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu email" required>
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Agência Criativa Web</p>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
