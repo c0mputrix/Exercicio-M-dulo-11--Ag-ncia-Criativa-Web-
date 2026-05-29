@@ -8,19 +8,33 @@
 </head>
 <body>
 
-<header>
-  <div class="container nav">
+<header class ="header">
+  <div class="container header__container">
     <h1 class="logo">Criativa<span>Web</span></h1>
 
-    <nav id="menu">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+   <nav class="navbar" id="menu">
+     <ul class="navbar__list">
+      <li class="navbar__item">
+         <a href="#home" class="navbar__link">Home</a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="#sobre" class="navbar__link">Sobre</a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="#servicos" class="navbar__link">Serviços</a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="#depoimentos" class="navbar__link">Depoimentos</a>
+      </li>
+
+      <li class="navbar__item">
+        <a href="#contato" class="navbar__link">Contato</a>
+      </li>
+     </ul>
+   </nav>
 
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
   </div>
@@ -30,7 +44,9 @@
   <div class="container">
     <h2>Transformamos ideias em experiências digitais</h2>
     <p>Design moderno, desenvolvimento rápido e resultados reais.</p>
-    <a href="#contato" class="btn">Fale Conosco</a>
+    <a href="#contato" class="button button--primary">
+  Fale Conosco
+</a>
   </div>
 </section>
 
@@ -45,18 +61,18 @@
   <div class="container">
     <h2>Serviços</h2>
 
-    <div class="grid">
-      <div class="card">
+    <div class="services__grid">
+      <div class="service-card">
         <h3>Design Gráfico</h3>
         <p>Identidade visual moderna e profissional.</p>
       </div>
 
-      <div class="card">
+      <div class="service-card">
         <h3>Desenvolvimento Web</h3>
         <p>Sites rápidos, responsivos e otimizados.</p>
       </div>
 
-      <div class="card">
+      <div class="service-card">
         <h3>Branding</h3>
         <p>Construa uma marca forte e memorável.</p>
       </div>
@@ -65,22 +81,33 @@
   </div>
 </section>
 
-<section id="depoimentos" class="section dark">
+<section id="depoimentos" class="section section--dark">
   <div class="container">
-    <h2>Depoimentos</h2>
+    <h2 class="section__title">Depoimentos</h2>
 
-    <div class="flex">
-      <div class="depoimento">
-        <p>"Excelente trabalho! Nosso site ficou incrível."</p>
-        <span>- Cliente 1</span>
+    <div class="testimonials__container">
+
+      <div class="testimonial-card">
+        <p class="testimonial-card__text">
+          "Excelente trabalho! Nosso site ficou incrível."
+        </p>
+
+        <span class="testimonial-card__author">
+          - Cliente 1
+        </span>
       </div>
 
-      <div class="depoimento">
-        <p>"Profissionais de alto nível e entrega rápida."</p>
-        <span>- Cliente 2</span>
+      <div class="testimonial-card">
+        <p class="testimonial-card__text">
+          "Profissionais de alto nível e entrega rápida."
+        </p>
+
+        <span class="testimonial-card__author">
+          - Cliente 2
+        </span>
       </div>
+
     </div>
-
   </div>
 </section>
 
@@ -88,7 +115,7 @@
   <div class="container">
     <h2>Contato</h2>
 
-    <form>
+    <form class="contact-form">
       <input type="text" placeholder="Seu nome" required>
       <input type="email" placeholder="Seu email" required>
       <textarea placeholder="Sua mensagem" required></textarea>
@@ -98,7 +125,7 @@
   </div>
 </section>
 
-<footer>
+<footer class="footer">
   <p>© 2026 Agência Criativa Web</p>
 </footer>
 
